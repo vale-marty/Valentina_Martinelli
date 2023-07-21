@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Valentina Martinelli - Junior Web Developer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Valentina Martinelli</title>
+  </head>
+  <body>
+    <!--barra navigazione con logo-->
+    <nav class="navbar navbar-expand-lg navbar-dark body-tertiary rounded colore">
+      <div class="container-fluid ">
+        <a href="index.html"><img class="logo" src="assets/img/logo_1.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contatti.html">CONTATTI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--head banner-->
+    <section class="sezione-about-me">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-12 text-center text-white about banner">
+            <h2><strong> CONTATTI</strong></h2>
+            <div>
+              <img src="assets/img/dash_icona.svg" class="icone dash">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--form contatti-->
+    <div class="container contatti">
+      <div class="row py-5 g-3">
+        <div class="col-md-6 first_col">
+            <h1 class="text-center mt-3">Contattami dal sito</h1>
+            <div class="form-group">
+              <h5 class="mt-3" for="name">Nome</h5>
+              <input type="text" class="form-control mb-4" id="fullName" required>
+              <h5 class="mt-3" for="Email">Email</h5>
+              <input type="email" name="email" class="form-control mb-4" id="email_id" placeholder="esempio@email.com" required="true" >
+              <h5 class="mt-3" for="message">Messaggio</h5>
+              <textarea class="form-control" id="message" placeholder="scrivi qui il tuo messaggio" ></textarea>
+              <button class="btn btn-dark" onclick="SendMail()">Invia</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="assets/img/banner2.jpg" alt="foto scrivania">
+        </div>
+      </div>
+      <div class="last_row">
+        <div class="row row-cols-1 row-cols-lg-1 p-3 text-white text-center">
+          <div class="col contatti">
+            <h4>Contatti</h4>
+            <p>
+              <img src="assets/img/email_icona.svg" class="icone">
+              valentina.martinelli03@gmail.com
+            </p>
+            <p>
+              <img src="assets/img/telefono_icona.svg" class="icone">
+              +39 324 551 1036
+            </p>
+          </div>
+          <div class="col social">
+            <h4>Social</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/valentinamartinelli__/" target="_blank">
+                  <img src="assets/img/instagram_icona.svg" class="icone">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/valentina.martinelli.3762" target="_blank">
+                  <img src="assets/img/facebook_icona.svg" class="icone">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/vale-marty" target="_blank">
+                  <img src="assets/img/github_icona.svg" class="icone">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://talent.start2impact.it/profile/valentina-martinelli" target="_blank">
+                  <img src="assets/img/s2i_icona.svg" class="icone">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h100 text-center text-lg-left">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="about.html">About</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="contatti.html">Contatti</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">Valentina Martinelli - Junior Web Developer.</p>
+          </div>
+          <div class="col-lg-6 h100 text-center text-lg-right">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a class="social" href="https://www.instagram.com/valentinamartinelli__/" target="_blank">
+                  <img src="assets/img/instagram_icona.svg" >
+                  <p class="small mb-4 mb-lg-0">Instagram</p>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a class="social" href="https://www.facebook.com/valentina.martinelli.3762" target="_blank">
+                  <img src="assets/img/facebook_icona.svg">
+                  <p class="small mb-4 mb-lg-0">Facebook</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("OQOOI8qDJi5_CKSo-");
+      })();
+    </script>
+  </body>
+</html>

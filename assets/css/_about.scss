@@ -1,0 +1,134 @@
+.sezione{
+    &-about-me{
+        background-color: white;
+        margin:0;
+        padding: 0;
+        .banner{
+            background-color: rgb(44, 40, 40);
+            padding-top:1rem;
+            padding-bottom: 1rem;
+            background-image:url("../img/banner2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+        }
+        .about{
+            h2{
+                margin-top: 3rem;
+            }
+            .dash{
+                width: 4rem;
+                padding-bottom: 1rem;
+                filter: brightness(0%) saturate(0%) invert(80%) sepia(3%) saturate(122%) hue-rotate(314deg) brightness(79%) contrast(94%);
+            }
+        }
+        .sezione-1{
+            padding-top: 3rem;
+            img{
+                width: 20rem;
+                border-radius: 10%;
+                margin-bottom: 3rem;
+            }
+            .about-1{
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                h2{
+                    color: rgb(15, 15, 15);
+                    padding-bottom: 0.7rem;
+                    font-size: 2.2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                
+                }
+                .button{
+                margin-top: 1.3rem;
+                    margin-bottom: 1rem;
+                    background-color: rgb(15, 15, 15);
+                    color: white;
+                    &:hover{
+                    background-color: rgb(39, 39, 39);
+                    }
+                }
+            }
+        }
+        .space{
+            padding-top: 3rem;
+            background-color: rgb(255, 255, 255);
+        }
+    }    
+}
+
+.sezione{
+    &-skills{
+        background-color: rgb(228, 222, 222);
+        margin-bottom: 2rem ;
+        
+        .skills{
+            h2{
+                padding-top: 3rem;
+                color: rgb(15, 15, 15);
+            }
+            .dash{
+                width: 4rem;
+                filter: brightness(0%) saturate(0%) invert(35%) sepia(11%) saturate(0%) hue-rotate(284deg) brightness(93%) contrast(90%);
+                padding-bottom: 1rem;
+            }
+            .icone{
+                padding-top:1rem;
+                padding-bottom: 2rem;
+                img{
+                    width: 2.5rem;
+                    padding-bottom: 1.5rem;
+                    padding-top: 1.2rem;
+                    filter: brightness(0%) saturate(0%) invert(35%) sepia(11%) saturate(0%) hue-rotate(284deg) brightness(93%) contrast(90%);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 200px ) and (max-width: 991px){
+    .sezione{
+        &-about-me{
+            .space{
+                padding-top: 2.7rem;
+            }
+            img{
+                margin-bottom: 3rem;
+                margin-top: 0.5rem;
+            }
+            .about-1{
+                h2{
+                    margin-left: 1.7rem;
+                    margin-right: 1.7rem;
+                }
+                p{
+                    margin-left: 1.7rem;
+                    margin-right: 1rem;
+                }
+                .button{
+                    margin-left: 1.7rem;
+                }
+            }
+        }
+    }
+
+    .sezione{
+        &-skills{
+            .icone{
+                p{
+                    padding-bottom: 2rem;
+                }
+                img{
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}
